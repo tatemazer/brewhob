@@ -1,0 +1,36 @@
+MKRNB 0.0.0 - ????.??.??
+
+MKRNB 1.3.1 - 2019.05.17
+
+* Fixed issues with NB::begin(...) failing for SIMs that required a PIN
+
+MKRNB 1.3.0 - 2019.05.15
+
+* Added optional parameters to NB::begin(...) to set the APN to username/password for registration
+* Replaced bundled "Amazon Root CA 1" root certificate with "Starfield Services Root Certificate Authority - G2 root CA"
+
+MKRNB 1.2.0 - 2019.03.26
+
+* SerialSARAPassthrough example: Enabled the POW_ON pin in setup()
+* Fixed result of NB::getTime()
+* Added optional parameter to NB::begin(...) to set the APN to use for registration
+* Added MODEM.setBaudRate(...) and MODEM.debug(print) and API's
+* Added Amazon Root CA 1
+
+MKRNB 1.1.0 - 2019.03.04
+
+* Removed NB::lowPowerMode() and NB::noLowPowerMode() API's
+* Changed begin() and end() to use the power pin to control the module power
+* Added SMS send and receive support
+* Added NBModem::getICCID() API
+
+MKRNB 1.0.1 - 2019.01.23
+
+* Fixed warning and incorrect enum comparison in NB::shutdown()
+* Choose Radio Access Technology sketch: Corrected 5G to 4G
+* Fixed NBClient::write for write lengths of > 256
+* NBUDP: Changed to use URC for received packets
+
+MKRNB 1.0.0 - 2018.11.28
+
+* Initial release

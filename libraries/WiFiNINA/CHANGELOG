@@ -1,0 +1,62 @@
+WiFiNINA ?.?.? - ????.??.??
+
+WiFiNINA 1.8.0 - 2020.11.18
+
+* Limit the maximum length of the download URL for the OTA binary since the receive buffer on the nina firmware can't hold more than 128 bytes (#131)
+* Introduce WiFiBearSSLClient (offloaded to Nina) (#139)
+* Change WIFI_FIRMWARE_LATEST_VERSION to 1.4.2
+
+WiFiNINA 1.7.1 - 2020.08.26
+
+* Change WIFI_FIRMWARE_LATEST_VERSION to 1.4.1
+
+WiFiNINA 1.7.0 - 2020.08.06
+
+* Add downloadOTA command to download OTA file and verify length/CRC (#124) (to be used together with nina-fw > arduino/nina-fw@d4a2118)
+
+WiFiNINA 1.6.0 - 2020.07.13
+
+* Adding API to make use of file storage/retieval capability available since nina-fw 1.5.0 (#74)
+* Speed up of duration of function ServerDrv::getDataBuf (#84)
+
+WiFiNINA 1.5.0 - 2019.12.30
+
+* Add WiFi.reasonCode() API to retrieve the deauthentication reason code
+* Use WIFI_FIRMWARE_LATEST_VERSION in example sketch FW version checks
+* Updated firmware updaters for Nano 33 IoT
+* Added Nano 33 IoT to explicit targets list
+* Added WPA2 Enterprise support: PEAP/MSCHAPv2 (depends on NINA f/w 1.3.0)
+
+WiFiNINA 1.4.0 - 2019.03.27
+
+* Improved connection time, by increasing poll time of checking connection status to 100ms on begin
+* Added WiFiClass::setTimeout(...) API to set timeout of begin
+* Fixed issue of WiFiServer:available() only reporting the first byte in the WiFiChatServer example
+
+WiFiNINA 1.3.0 - 2018.11.13
+
+* Added Tools/CheckFirmwareVersion example to check NINA firmware version
+* Changed examples where required, the server's URL arduino.cc:80 to example.org:80, because http://arduino.cc will be no longer available
+* Changed WiFi.end() to not put the reset pin mode in input mode
+* Use 1000000 baud for the firmware updater, and added support for the Uno WiFi Rev2
+
+WiFiNINA 1.2.0 - 2018.10.05
+
+* Changed WiFi.begin(...) not to fail, if not connected in 5 seconds
+* Removed retrying to get the host by name if it fails
+* Renamed WiFiNINAFirmwareUpdater example to SerialNINAPassthrough
+* Added new Firmware Updater Tool sketch (which talks to ESP32 boot ROM)
+* Changed firmware version comparison check to < instead of !=
+
+WiFiNINA 1.1.1 - 2018.09.11
+
+* Improved byte by byte read performance of sockets by adding a socket buffer
+
+WiFiNINA 1.1.0 - 2018.08.13
+
+* Added support for MKR Vidor 4000
+* Added handling of unknown encryption type in the ScanNetworks example
+
+WiFiNINA 1.0.0 - 2018.07.11
+
+* Initial release

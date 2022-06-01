@@ -1,0 +1,50 @@
+#######################################
+# Syntax Coloring Map For RTC
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+RTCCounter	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+isConfigured	KEYWORD2
+
+getFlag	KEYWORD2
+clearFlag	KEYWORD2
+
+attachInterrupt	KEYWORD2
+detachInterrupt	KEYWORD2
+
+setAlarmEpoch	KEYWORD2
+setAlarmY2kEpoch	KEYWORD2
+setPeriodicAlarm	KEYWORD2
+
+getAlarmEpoch	KEYWORD2
+getAlarmY2kEpoch	KEYWORD2
+
+getAlarmPeriod	KEYWORD2
+isAlarmPeriodic	KEYWORD2
+  
+disableAlarm	KEYWORD2
+  
+getEpoch	KEYWORD2
+getY2kEpoch	KEYWORD2
+
+setEpoch	KEYWORD2
+setY2kEpoch	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+rtcCounter	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################

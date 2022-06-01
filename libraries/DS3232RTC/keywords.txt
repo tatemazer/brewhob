@@ -1,0 +1,16 @@
+DS3232RTC	KEYWORD1
+begin	KEYWORD2
+get	KEYWORD2
+set	KEYWORD2
+read	KEYWORD2
+write	KEYWORD2
+writeRTC	KEYWORD2
+readRTC	KEYWORD2
+setAlarm	KEYWORD2
+alarmInterrupt	KEYWORD2
+alarm	KEYWORD2
+checkAlarm	KEYWORD2
+clearAlarm	KEYWORD2
+squareWave	KEYWORD2
+oscStopped	KEYWORD2
+temperature	KEYWORD2

@@ -1,0 +1,30 @@
+#######################################
+# Syntax Coloring Map For Arduino_DebugUtils
+#######################################
+
+#######################################
+# Class (KEYWORD1)
+#######################################
+
+Debug	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setDebugLevel	KEYWORD2
+setDebugOutputStream	KEYWORD2
+timestampOn	KEYWORD2
+timestampOff	KEYWORD2
+print	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+DBG_NONE	LITERAL1
+DBG_ERROR	LITERAL1
+DBG_WARNING	LITERAL1
+DBG_INFO	LITERAL1
+DBG_DEBUG	LITERAL1
+DBG_VERBOSE	LITERAL1

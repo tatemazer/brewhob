@@ -1,0 +1,59 @@
+#######################################
+# Syntax Coloring Map For MKNB
+####################################### 
+# Class
+#######################################
+
+MKRNB	KEYWORD1
+NB	KEYWORD1
+NB_SMS	KEYWORD1
+GPRS	KEYWORD1
+NBClient	KEYWORD1
+NBModem	KEYWORD1
+NBScanner	KEYWORD1
+NBPIN	KEYWORD1
+NBSSLClient	KEYWORD1
+NBUdp	KEYWORD1
+
+#######################################
+# Methods and Functions 
+#######################################	
+
+begin	KEYWORD2
+shutdown	KEYWORD2
+ready	KEYWORD2
+setTimeout	KEYWORD2
+beginSMS	KEYWORD2
+endSMS	KEYWORD2
+remoteNumber	KEYWORD2
+attachGPRS	KEYWORD2
+beginWrite	KEYWORD2
+endWrite	KEYWORD2
+getIMEI	KEYWORD2
+getICCID	KEYWORD2
+getCurrentCarrier	KEYWORD2
+getSignalStrength	KEYWORD2
+readNetworks	KEYWORD2
+isPIN	KEYWORD2
+checkPIN	KEYWORD2
+checkPUK	KEYWORD2
+changePIN	KEYWORD2
+switchPIN	KEYWORD2
+checkReg	KEYWORD2
+getPINUsed	KEYWORD2
+setPINUsed	KEYWORD2
+hostByName	KEYWORD2
+getTime	KEYWORD2
+setTime	KEYWORD2
+getLocalTime	KEYWORD2
+
+#######################################
+# Constants
+#######################################
+ 
+ERROR	LITERAL1
+IDLE	LITERAL1
+CONNECTING	LITERAL1
+NB_READY	LITERAL1
+GPRS_READY	LITERAL1
+TRANSPARENT_CONNECTED	LITERAL1
