@@ -87,6 +87,7 @@ void loop() {
       _State            = brewhob->getState();
       _Log              = brewhob->log_;
       _FlowRate         = brewhob->getFlowRate();
+      _LastShot         = brewhob->lastShotSpecs_;
 
       ArduinoCloud.update();
 

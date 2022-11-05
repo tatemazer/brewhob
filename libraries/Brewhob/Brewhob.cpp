@@ -199,6 +199,7 @@ int Brewhob::setState(){
 
         if(shotTimer_ > 20){
           //lastShotSpecs Here
+          recordShotSpecs();
         }
       }
       shotTimer_ = ( millis() - shotTimerStart_ ) / 1000;
@@ -438,4 +439,38 @@ void Brewhob::enableRTD(){
 void Brewhob::setTemp(int sensorNum, float val){
   if(sensorNum==1) setpoint1_ = val;
   if(sensorNum==2) setpoint2_ = val;
+}
+void Brewhob::recordShotSpecs(){
+  lastShotSpecs_ = "";
+  lastShotSpecs_ = lastShotSpecs_
+                 + shotTimer_ 
+                 + "s, "
+                 + flowCount_
+                 + " Pulses, ";
+
+
+  if(prewet_){
+    lastShotSpecs_ = lastShotSpecs_
+                   + "Prewet "
+                   + prewet_
+                   + "s, ";
+  }
+
+  if(dwell_){
+    lastShotSpecs_ = lastShotSpecs_
+                   + "Dwell "
+                   + dwell_
+                   + "s, ";
+  }
+  if(delayPumpStart_){
+    lastShotSpecs_ = lastShotSpecs_
+                   + "Bloom "
+                   + delayPumpStart_
+                   + "s, ";
+  }
+  if(BREW_BOILER_EN){
+    lastShotSpecs_ = lastShotSpecs_
+                   + (int)round(getRTD(1)) 
+                   + "F, ";
+  }
 }

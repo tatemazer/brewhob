@@ -61,6 +61,7 @@ class Brewhob
     void setTea(bool in);
     bool getTea();
     void setTemp(int sensorNum, float val);
+    void recordShotSpecs();
 
     String                  log_;
     String                  lastShotSpecs_;
@@ -100,6 +101,8 @@ class Brewhob
     FastPID*                PID2_; 
     int64_t                 PID1Val_ = 0;
     int64_t                 PID2Val_ = 0;
+
+    float                   PowerConsumption_kWh = 0;
 
 
     int                     fillProbeState_; //touching water = 1=
